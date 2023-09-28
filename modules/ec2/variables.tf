@@ -9,3 +9,7 @@ variable "ami_id" {
 variable "subnet_id" {
   description = "The ID of the subnet to launch the instance in"
 }
+
+variable "sg_id" {
+  description = "ID of the sg"
+}
