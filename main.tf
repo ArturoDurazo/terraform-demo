@@ -12,7 +12,7 @@ module "subnet" {
 module "ec2" {
   source = "./modules/ec2"
 
-  instance_type = "t2.micro"
+  instance_type = "t2.medium"
   ami_id        = "ami-0c94855ba95c71c99"
   subnet_id     = module.subnet.subnet_id
   sg_id         = module.sg.id
